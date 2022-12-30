@@ -6,14 +6,15 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<script src="index.js"></script>
 <div class="wrapper">
     <h1>Homestuck Characters</h1>
-    <h2>(Click on us and we ascend to the god tier!)</h2>
+    <h2>Mouse Over to make us God Tier!</h2>
     <h3>Beta Kids</h3>
     <div id="beta-kids">
         <p class="name">John Egbert</p>
         <img alt="John Egbert" src="https://static.wikia.nocookie.net/mspaintadventures/images/e/ec/John_Egbert2.png/revision/latest?cb=20160517194150" 
-        id="johnClickAndChange" onclick="changeImageJohn()"/>
+        id="johnImg" onmouseover="johnGodTier()" onmouseout="johnRegular()"/>
         <ul>
             <li>Chumhandle: ectoBiologist</li>
             <li>Class: Heir</li>
@@ -22,7 +23,7 @@
         </ul>
         <p class="name">Rose Lalonde</p>
         <img alt="Rose Lalonde" src="https://static.wikia.nocookie.net/mspaintadventures/images/7/7e/Rose_Lalonde.png/revision/latest?cb=20100710062733" 
-         id="roseClickAndChange" onclick="changeImageRose()"/>
+         id="roseImg" onmouseover="roseGodTier()" onmouseout="roseRegular()"/>
         <ul>
             <li>Chumhandle: tentacleTherapist</li>
             <li>Class: Seer</li>
@@ -31,7 +32,7 @@
         </ul>
         <p class="name">Dave Strider</p>
         <img alt="Dave Strider" src="https://static.wikia.nocookie.net/mspaintadventures/images/e/e8/Dave_Strider.png/revision/latest?cb=20101027044211" 
-         id="daveClickAndChange" onclick="changeImageDave()"/>
+         id="daveImg" onmouseover="daveGodTier()" onmouseout="daveRegular()"/>
         <ul>
             <li>Chumhandle: turntechGodhead</li>
             <li>Class: Knight</li>
@@ -40,7 +41,7 @@
         </ul>
         <p class = "name">Jade Harley</p>
         <img alt="Jade Harley" src="https://static.wikia.nocookie.net/mspaintadventures/images/a/ad/Jade_Harley.gif/revision/latest?cb=20100826013411" 
-         id="jadeClickAndChange" onclick="changeImageJade()"/>
+         id="jadeImg" onmouseover="jadeGodTier()" onmouseout="jadeRegular()"/>
         <ul>
             <li>Chumhandle: gardenGnostic</li>
             <li>Class: Witch</li>
@@ -51,7 +52,7 @@
     <div id="alpha-kids">
         <p class="name">Jane Crocker</p>
         <img alt="Jane Crocker" src="https://static.wikia.nocookie.net/mspaintadventures/images/f/f4/Jane_Crocker.png/revision/latest?cb=20130109194446" 
-         id="janeClickAndChange" onclick="changeImageJane()"/>
+         id="janeImg" onmouseover="janeGodTier()" onmouseout="janeRegular()"/>
         <ul>
             <li>Chumhandle: gutsyGumshoe</li>
             <li>Class: Maid</li>
@@ -60,7 +61,7 @@
         </ul>
         <p class="name">Roxy Lalonde</p>
         <img alt="Roxy Lalonde" src="https://static.wikia.nocookie.net/mspaintadventures/images/c/c3/Roxy_Lalonde.png/revision/latest?cb=20111117064128" 
-         id="roxyClickAndChange" onclick="changeImageRoxy()"/>
+         id="roxyImg" onmouseover="roxyGodTier()" onmouseout="roxyRegular()"/>
         <ul>
             <li>Chumhandle: tipsyGnostalgic</li>
             <li>Class: Rogue</li>
@@ -69,7 +70,7 @@
         </ul>
         <p class="name">Dirk Strider</p>
         <img alt="Dirk Strider" src="https://static.wikia.nocookie.net/mspaintadventures/images/5/58/Dirk_Strider.png/revision/latest?cb=20171109025839" 
-         id="dirkClickAndChange" onclick="changeImageDirk()"/>
+         id="dirkImg" onmouseover="dirkGodTier()" onmouseout="dirkRegular()"/>
         <ul>
             <li>Chumhandle: timaeusTestified</li>
             <li>Class: Prince</li>
@@ -78,8 +79,7 @@
         </ul>
         <p class="name">Jake English</p>
         <img alt="Jake English" src="https://static.wikia.nocookie.net/mspaintadventures/images/a/ae/Jake_English.png/revision/latest?cb=20111111200652" 
-         id="jakeClickAndChange" onclick="changeImageJake()"/>
-        <ul>
+         id="jakeImg" onmouseover="jakeGodTier()" onmouseout="jakeRegular()"/>
             <li>Chumhandle: golgothosTerror</li>
             <li>Class: Page</li>
             <li>Aspect: Hope</li>
